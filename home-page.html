@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Font Verifier</title>
+
+    <!-- Css links -->
+    <link rel="stylesheet" href="assets/variable.css">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/body.css">
+    <link rel="stylesheet" href="assets/form.css">
+
+    <title>Verificador de fonte</title>
 </head>
 <body>
-    Teste de reconhecimento
+    <div class="box">
+        <header>
+            <p>Verificador de tamanho</p>
+        </header>
+        <form action="home-page.php" method="get" class="form">
+            <div class="datas">
+                <div class="text">
+                    Texto: <input type="text" name="txt" class="txt">
+                </div>
+                <div class="size">
+                    Tamanho: <select name="tamanho" class="tam">
+                        <option value="8pt">8</option>
+                        <option value="16pt">16</option>
+                        <option value="24pt">24</option>
+                        <option value="32pt">32</option>
+                        <option value="40pt">40</option>
+                        <option value="48pt">48</option>
+                        <option value="56pt">56</option>
+                        <option value="64pt">64</option>
+                        <option value="72pt">72</option>
+                        <option value="80pt">80</option>
+                        <option value="88pt">88</option>
+                    </select>
+                </div>
+                <div class="color">
+                    Cor: <input type="color" name="cor" class="cor">
+                </div>
+                <div>
+                    <input type="submit" value="Gerar" class="botao">
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
