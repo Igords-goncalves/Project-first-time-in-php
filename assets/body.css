@@ -9,10 +9,15 @@ body {
     background: var(--background);
 }
 
+header {
+    margin: 15px 0 15px 0;
+}
+
 .box {
     width: 500px;
     height: 500px;
     background-color: var(--box);
+    border-radius: 10px;
 
     display: flex;
     flex-direction: column;
